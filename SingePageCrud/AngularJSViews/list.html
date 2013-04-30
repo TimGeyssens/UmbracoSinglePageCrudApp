@@ -1,0 +1,23 @@
+﻿<h1>Overview</h1>
+
+<div class="alert alert-success" ng-show="showAlert">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ alert }}
+</div>
+
+<strong ng-show="loading">loading..</strong>
+
+<p ng-show="!statuses.length">No statuses, add one first.</p>
+
+<ul ng-repeat="status in statuses | orderBy:'Id':true" class="unstyled">
+    <li class="status">
+
+        <a href="#/edit/{{status.Id}}" class="edit"><i class="icon-pencil"></i></a>
+        <h2>{{ status.Title }}</h2>
+        <p ng-bind-html-unsafe="status.Message"></p>
+
+
+    </li>
+</ul>
+
+

@@ -1,0 +1,35 @@
+﻿<div class="alert" ng-show="error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  {{ error }}
+</div>
+
+<form name="myForm" class="form-horizontal">
+    <fieldset>
+        <legend>{{ action }}</legend>
+        <div class="control-group">
+            <label for="title" class="control-label">Title:</label>
+            <div class="controls">
+                <input class="span8" id="title" type="text" ng-model="status.Title"
+                       required>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="message" class="control-label">Content:</label>
+            <div class="controls">
+                <textarea class="span8" id="message" ng-model="status.Message" rows="3"
+                          required></textarea>
+                
+            </div>
+        </div>
+        <div class="form-actions">
+            <a href="#/" class="btn">Cancel</a>
+            <button ng-click="save()" ng-disabled="isClean() || myForm.$invalid || saving"
+                    class="btn btn-primary">Save</button>
+            <button ng-click="destroy()"
+                    ng-show="status.Id" class="btn btn-danger">Delete</button>
+        
+        </div>
+    </fieldset>
+</form>
+
+

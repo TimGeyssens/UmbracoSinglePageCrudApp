@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html ng-app="project">
+<head>
+    <title>Crud example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+    <link href="/css/projectstyle.css" rel="stylesheet">
+    <style>
+        body
+        {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <script type="text/javascript">
+        var currentUmbracoPageId = 1046;
+    </script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <a class="brand" href="#">UmbracoApiController and AngularJS</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="#/new"><i class="icon-edit icon-white"></i>Add</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container" ng-view>
+    </div>
+    <script src="/scripts/angular.min.js"></script>
+    <script src="/scripts/angular-resource.min.js"></script>
+    <script src="/scripts/project.js"></script>
+    <script src="/scripts/jquery-2.0.0.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/wysihtml5-0.3.0_rc2.min.js"></script>
+    <script src="/scripts/bootstrap-wysihtml5-0.0.2.min.js"></script>
+</body>
+</html>
