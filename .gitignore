@@ -33,7 +33,8 @@
 *.dotCover
 
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
-packages/
+packages/*
+!packages/repositories.config
 
 
 # Visual Studio profiler

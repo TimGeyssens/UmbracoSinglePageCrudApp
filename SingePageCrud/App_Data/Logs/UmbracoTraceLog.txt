@@ -1161,3 +1161,5 @@ System.Exception: Error indexing queue items,Could not find file 'C:\Users\Tim\D
 System.InvalidOperationException: Multiple nodes with the same URL '/' were found. XmlSiteMapProvider requires that sitemap nodes have unique URLs.
    at System.Web.StaticSiteMapProvider.AddNode(SiteMapNode node, SiteMapNode parentNode)
    at umbraco.presentation.nodeFactory.UmbracoSiteMapProvider.loadNodes(String parentId, SiteMapNode parentNode)
+2013-04-30 09:58:30,961 [30] INFO  umbraco.BusinessLogic.Log - [Thread 26] Log scrubbed.  Removed all items older than 2013-03-01 09:58:30
+2013-04-30 09:58:30,962 [30] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 26] Application shutdown. Reason: ConfigurationChange
