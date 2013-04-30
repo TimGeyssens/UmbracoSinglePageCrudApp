@@ -255,6 +255,7 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="css\dummy.txt" />
+    <Content Include="css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="macroScripts\dummy.txt" />
     <Content Include="masterpages\dummy.txt" />
