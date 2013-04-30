@@ -32,10 +32,12 @@
 .builds
 *.dotCover
 
-## TODO: If you have NuGet Package Restore enabled, uncomment this
+##NuGet
 packages/*
 !packages/repositories.config
 
+#Allow NuGet.exe (do not ignore)
+!NuGet.exe
 
 # Visual Studio profiler
 *.psess
